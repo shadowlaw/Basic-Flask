@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+</head>
+<body>
+	{% if login == True %}
+		<p>Welcome {{user}} </p>
+		<p><a href="/uploader">Upload File</a></p>
+		<p><a href="/logout">Logout</a></p>
+	{% else %}
+		<p>Please Login</p>
+		<p><a href="/">login</a></p>
+	{% endif %}
+
+</body>
+</html>

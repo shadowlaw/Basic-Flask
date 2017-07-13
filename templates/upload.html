@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upload Test</title>
+</head>
+<body>
+	{% if login == True %}
+		<form action="fileLoader" method="POST" enctype="multipart/form-data">
+			<p>
+				Upload a photo or gif<br><input type="file" name="uploaded_file"/>
+			</p>
+			<p>
+				<input type="submit"/>
+			</p>
+		</form>
+		<p>
+			<a href="/profile">Back To Profile</a>
+		</p>
+	{% else %}
+		<p>Login: <a href="/">Login</a></p>
+	{% endif %}
+</body>
+</html>
